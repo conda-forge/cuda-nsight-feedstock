@@ -1,6 +1,6 @@
 {% set name = "cuda-nsight" %}
-{% set version = "12.0.78" %}
-{% set cuda_version = "12.0" %}
+{% set version = "12.1.105" %}
+{% set cuda_version = "12.1" %}
 {% set platform = "linux-x86_64" %}  # [linux64]
 {% set platform = "linux-ppc64le" %}  # [ppc64le]
 {% set extension = "tar.xz" %}  # [not win]
@@ -11,8 +11,8 @@ package:
 
 source:
   url: https://developer.download.nvidia.com/compute/cuda/redist/cuda_nsight/{{ platform }}/cuda_nsight-{{ platform }}-{{ version }}-archive.{{ extension }}
-  sha256: d7d151829fa516041174366f1460371e598f0b5b1665fb4a369b539bfc4b60e0  # [linux64]
-  sha256: 00af4bff3ac54bdb0b9c16eba80aa3c95814845805559691d504b8837d620b32  # [ppc64le]
+  sha256: 76d61e20abbd07e794ab640179d8f86f092c05c418e8ee6d2845ab1626db1655  # [linux64]
+  sha256: 1b0636867c23e5dd0348ad7b49d9b10a2c831e0cdaac99dce23686a31aebde52  # [ppc64le]
 
 build:
   number: 0
@@ -43,4 +43,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - adibbley
+    - conda-forge/cuda
