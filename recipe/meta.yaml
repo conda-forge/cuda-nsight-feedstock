@@ -15,7 +15,7 @@ source:
   sha256: 2e402c471dedcc41bb0be2517a836bdadcc539ce799fb7599304c5ffdc7dc566  # [ppc64le]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [aarch64 or osx or win]
 
 requirements:
