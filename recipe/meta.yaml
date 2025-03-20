@@ -18,6 +18,8 @@ build:
   skip: true  # [not linux64]
 
 requirements:
+  build:
+    - cf-nvidia-tools 1.*  # [linux]
   host:
     - cuda-version {{ cuda_version }}
   run:
