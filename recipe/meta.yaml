@@ -1,6 +1,6 @@
 {% set name = "cuda-nsight" %}
-{% set version = "13.1.115" %}
-{% set cuda_version = "13.1" %}
+{% set version = "13.2.20" %}
+{% set cuda_version = "13.2.0" %}
 {% set platform = "linux-x86_64" %}  # [linux64]
 {% set platform = "linux-ppc64le" %}  # [ppc64le]
 {% set extension = "tar.xz" %}  # [not win]
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://developer.download.nvidia.com/compute/cuda/redist/cuda_nsight/{{ platform }}/cuda_nsight-{{ platform }}-{{ version }}-archive.{{ extension }}
-  sha256: 7587ef47dd944943e640ff23d5fc7e43fafecb18cf67507efb5b24ea1ebb0b0e  # [linux64]
+  sha256: acb4aade9b413674531fe68191b451fb626f4bd8f6cd1e30d3a4faccd3dfb51d  # [linux64]
 
 build:
   number: 0
